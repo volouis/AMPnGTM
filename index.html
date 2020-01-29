@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html ⚡ lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <meta name="description" content="This is the AMP Boilerplate.">
+    <link rel="preload" as="script" href="https://cdn.ampproject.org/v0.js">
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <!-- Import other AMP Extensions here -->
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+    <style amp-custom>
+      body{
+        max-width: 500px;
+        margin: auto;
+      }
+    </style>
+    <link rel="canonical" href=".">
+    <title>My AMP Page</title>
+    
+    <!-- AMP Analytics -->
+    <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+
+  </head>
+  <body class="content">
+    
+    <!-- Google Tag Manager -->
+    <amp-analytics config="https://www.googletagmanager.com/amp.json?id=GTM-PF3TC2Q&gtm.url=SOURCE_URL" data-credentials="include"></amp-analytics>
+    <script type="application/json ">
+      {
+          "vars" : {
+              "type": "shoes",
+              "color": "red"
+          }
+      }
+  </script>
+
+    <amp-img alt="A view of the sea"
+      src="ocean.jpg"
+      width="250px"
+      height="250px"
+      layout="responsive">
+    </amp-img>
+
+    <h1>Hello Plunker!</h1>
+    
+    <button class="locoPlace" href="" onclick="dataLayer.push({
+      'tripCategory': 'skiing',
+      'tripLocation': 'Canada'
+    })">Second Page</button>
+    <a class="locoPlace" href="second.html" onclick="dataLayer.push({
+      'tripCategory': 'snowboarding',
+      'tripLocation': 'USA'
+    })">Thrid Page</a>
+    <a class="locoPlace" href="second.html" onclick="dataLayer.push({
+      'tripCategory': 'bobsled',
+      'tripLocation': 'Switzerland'
+    })">Forth Page</a>
+    
+    <br><br>
+
+    <form action="/action_page.php">
+      First name: <input type="text" name="fname"><br>
+      Last name: <input type="text" name="lname"><br>
+      <input type="submit" value="Submit">
+      <h4 class="price">200</h4>
+    </form>
+    <p>fsfsafsdsfs</p>
+
+    <button><a href="second.html">item 1</a></button>
+    <button><a href="second.html">item 2</a></button>
+    <button><a href="second.html">item 3</a></button>
+    <button><a href="second.html">item 4</a></button>
+    <button><a href="second.html">item 5</a></button>
+    <button><a href="second.html">item 6</a></button>
+
+  </body>
+  <script>
+    var dataLayer = [];
+  
+  </script>
+
+</html>
