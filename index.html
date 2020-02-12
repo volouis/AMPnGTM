@@ -43,12 +43,21 @@
       <script type="application/json">
       {
         "vars": {
-          "account": "UA-UA-135704236-2"
+          "account": "UA-135704236-2"
         },
         "triggers": {
           "trackPageview": {
             "on": "visible",
             "request": "pageview"
+          }
+        },
+        "triggers": {
+          "button": {
+            "on": "click",
+            "vars": {
+              "event_name": "item",
+              "number": "1"
+            }
           }
         }
       }
