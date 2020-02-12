@@ -24,21 +24,22 @@
       </style>
     </noscript>
     <style amp-custom>
-      body{
-        max-width: 500px;
-        margin: auto;
+      /* any custom style goes here */
+      body {
+        background-color: black;
+      }
+      amp-img {
+        background-color: gray;
+        border: 1px solid white;
       }
     </style>
     <link rel="canonical" href=".">
     <title>My AMP Page</title>
     
-    <!-- AMP Analytics -->
-    <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+
   </head>
   <body class="content">
     
-    <!-- Google Tag Manager -->
-    <amp-analytics config="https://www.googletagmanager.com/amp.json?id=GTM-PF3TC2Q&gtm.url=SOURCE_URL" data-credentials="include"></amp-analytics>
 
     <amp-img alt="A view of the sea"
       src="ocean.jpg"
@@ -48,28 +49,10 @@
     </amp-img>
 
     <h1>Hello Plunker!</h1>
-    
-    <button class="locoPlace" href="" onclick="dataLayer.push({
-      'tripCategory': 'skiing',
-      'tripLocation': 'Canada'
-    })">Second Page</button>
-    <a class="locoPlace" href="" onclick="dataLayer.push({
-      'tripCategory': 'snowboarding',
-      'tripLocation': 'USA'
-    })">Thrid Page</a>
-    <a class="locoPlace" href="" onclick="dataLayer.push({
-      'tripCategory': 'bobsled',
-      'tripLocation': 'Switzerland'
-    })">Forth Page</a>
+  
     
     <br><br>
 
-    <amp-form action="/action_page.php">
-      First name: <input type="text" name="fname"><br>
-      Last name: <input type="text" name="lname"><br>
-      <input type="submit" value="Submit">
-      <h4 class="price">200</h4>
-    </amp-form>
 
     <button><a href="">item 1</a></button>
     <button><a href="">item 2</a></button>
@@ -79,9 +62,4 @@
     <button><a href="">item 6</a></button>
 
   </body>
-  <script>
-    var dataLayer = [];
-  
-  </script>
-
 </html>
