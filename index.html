@@ -50,15 +50,6 @@
             "on": "visible",
             "request": "pageview"
           }
-        },
-        "triggers": {
-          "button": {
-            "on": "click",
-            "vars": {
-              "event_name": "item",
-              "number": "1"
-            }
-          }
         }
       }
       </script>
@@ -85,6 +76,28 @@
     <button><a href="">item 4</a></button>
     <button><a href="">item 5</a></button>
     <button><a href="">item 6</a></button>
+    
+    <amp-analytics type="gtag" data-credentials="include">
+      <script type="application/json">
+        {
+          "vars": {
+            "gtag_id": "<GA_MEASUREMENT_ID>",
+            "config": {
+             "<GA_MEASUREMENT_ID>": { "groups": "default" }
+            }
+          },
+          "triggers": {
+            "button": {
+              "on": "click",
+              "vars": {
+                "event_name": "login",
+                "method": "Google"
+              }
+            }
+          }
+        }
+      </script>
+    </amp-analytics>
 
   </body>
 </html>
