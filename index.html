@@ -49,16 +49,16 @@
         "trackPageview": {  
           "on": "visible",
           "request": "pageview"
-        }
-      },
-      "btnClick" : {
-        "on" : "click",
-        "selector" : "button a",
-        "request" : "event",
-        "vars" : {
-          "eventCategory" : "Click",
-          "eventAction" : "Outbound",
-          "eventLabel" : "${analyticsLink}"
+        },
+        "btnClick" : {
+          "on" : "click",
+          "selector" : "button a",
+          "request" : "event",
+          "vars" : {
+            "eventCategory" : "Click",
+            "eventAction" : "Outbound",
+            "eventLabel" : "${analyticsLink}"
+          }
         }
       }
     }
