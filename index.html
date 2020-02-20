@@ -47,6 +47,16 @@
         "config" : {
           "<UA-135704236-2>": { "groups": "default" }
         }
+      },
+      "btnClick" : {
+        "on" : "click",
+        "selector" : "button a",
+        "request" : "event",
+        "vars" : {
+          "eventCategory" : "Click",
+          "eventAction" : "Outbound",
+          "eventLabel" : "${analyticsLink}"
+        }
       }
     }
 </script>
