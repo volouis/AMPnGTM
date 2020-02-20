@@ -42,10 +42,13 @@
     <amp-analytics type="gtag" data-credentials="include">
     <script type="application/json">
     {
-      "vars" : {
-        "gtag_id": "<UA-135704236-2>",
-        "config" : {
-          "<UA-135704236-2>": { "groups": "default" }
+      "vars": {
+        "account": "UA-135704236-2" 
+      },
+      "triggers": {
+        "trackPageview": {  
+          "on": "visible",
+          "request": "pageview"
         }
       },
       "btnClick" : {
