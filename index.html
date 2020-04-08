@@ -39,29 +39,14 @@
     <!-- AMP Analytics -->
     <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
     <!-- Google Analytics -->
-    <!-- <amp-analytics type="googleanalytics" id="analytics1">
+    <!-- <amp-analytics type="googleanalytics" id="analytics1"> -->
     <script type="application/json">
     {
       "vars": {
-        "account": "UA-135704236-2" 
-      },
-      "triggers": {
-        "trackPageview": {  
-          "on": "visible",
-          "request": "pageview"
-        },
-        "btnClick" : {
-          "on" : "click",
-          "selector" : "button a",
-          "request" : "event",
-          "vars" : {
-            "eventCategory" : "Click",
-            "eventAction" : "Outbound",
-            "eventLabel" : "${analyticsLink}"
-          }
-        }
+        "someApmVar":"someValue",
+        "someOtherAmpVar":"someValueAgain"
       }
-    } -->
+    }
   </script>
 </amp-analytics>
 
