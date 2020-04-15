@@ -38,17 +38,35 @@
     
     <!-- AMP Analytics -->
     <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+    <amp-analytics type="gtag" data-credentials="include">
+      <script type="application/json">
+      {
+        "vars" : {
+          "gtag_id": "UA-135704236-1",
+          "config" : {
+            "UA-135704236-1": { "groups": "default" }
+          },
+          "triggers": {
+            "button": {
+              "selector": "button a",
+              "on": "click",
+              "vars": {
+                "event_name": "login",
+                "method": "Google"
+              }
+            }
+          },
+          "someApmVar":"someValue",
+          "someOtherAmpVar":"someValueAgain",
+          "aThirdTry": 123
+        }
+      }
+      </script>
+      </amp-analytics>
+    
+    
     <!-- Google Analytics -->
     <!-- <amp-analytics type="googleanalytics" id="analytics1"> -->
-    <script type="application/json">
-    {
-      "vars": {
-        "someApmVar":"someValue",
-        "someOtherAmpVar":"someValueAgain",
-        "aThirdTry": 123
-      }
-    }
-  </script>
 </amp-analytics>
 
   </head>
