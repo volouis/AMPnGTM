@@ -47,12 +47,22 @@
             "UA-135704236-1": { "groups": "default" }
           },
           "triggers": {
+            "trackPageview": {
+              "on": "visible"
+            },
             "button": {
-              "selector": "button a",
-              "on": "click",
+              "selector": "a"not([href*=document.location.hostname])",
               "vars": {
-                "event_name": "login",
-                "method": "Google"
+                "gtm.event": "gtm.click"
+              }
+              "on": "click",
+            },
+            "someEvent": {
+              "on": "click",
+              "request": "event",
+              "vars": {
+                "eventCategory": "nav",
+                "eventAction": "hello"
               }
             }
           },
